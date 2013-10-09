@@ -1,5 +1,5 @@
 {
-    "name": "vsergiu/KLBaseBundle",
+    "name": "vsergiu/base-bundle",
     "type": "symfony-bundle",
     "description": "Symfony KLBaseBundle",
     "keywords": ["Base Operations"],
