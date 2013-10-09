@@ -5,6 +5,7 @@
     "keywords": ["Base Operations"],
     "homepage": "http://github.com/vsergiu/KLBaseBundle",
     "license": "MIT",
+    "version": "0.0.1",
     "authors": [
         {
             "name": "Variu Sergiu",
