@@ -2,7 +2,7 @@
 
 namespace KL\BaseBundle\Model;
 
-use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\ORM\EntityManager;
 use KL\BaseBundle\Entity\BaseEntity;
 
 abstract class BaseManager
@@ -12,12 +12,12 @@ abstract class BaseManager
     protected $class;
     protected $repository;
 
-    public function __construct(ObjectManager $om, $class)
+    public function __construct(EntityManager $em, $class)
     {
-        $this->objectManager = $om;
-        $this->repository = $om->getRepository($class);
+        $this->objectManager = $em;
+        $this->repository = $em->getRepository($class);
         
-        $metadata = $om->getClassMetadata($class);
+        $metadata = $em->getClassMetadata($class);
         $this->class = $metadata->getName();
         
     }

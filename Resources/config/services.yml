@@ -1,0 +1,5 @@
+services:
+    kl_base.encoder:
+        class: KL\BaseBundle\Util\Encoder
+        arguments:
+            container: "@service_container"
